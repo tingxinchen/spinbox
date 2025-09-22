@@ -16,10 +16,10 @@
   <widget class="QSpinBox" name="spinBox">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>190</y>
-     <width>42</width>
-     <height>22</height>
+     <x>40</x>
+     <y>300</y>
+     <width>181</width>
+     <height>21</height>
     </rect>
    </property>
    <property name="minimum">
@@ -28,14 +28,17 @@
    <property name="maximum">
     <number>100</number>
    </property>
+   <property name="displayIntegerBase">
+    <number>10</number>
+   </property>
   </widget>
   <widget class="QSlider" name="horizontalSlider">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>190</y>
-     <width>160</width>
-     <height>22</height>
+     <x>240</x>
+     <y>290</y>
+     <width>291</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="minimum">
@@ -51,10 +54,10 @@
   <widget class="QLCDNumber" name="lcdNumber">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>260</y>
-     <width>121</width>
-     <height>61</height>
+     <x>550</x>
+     <y>240</y>
+     <width>241</width>
+     <height>131</height>
     </rect>
    </property>
   </widget>
