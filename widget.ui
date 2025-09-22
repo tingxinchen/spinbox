@@ -13,54 +13,41 @@
   <property name="windowTitle">
    <string>Widget</string>
   </property>
-  <widget class="QSpinBox" name="spinBox">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>300</y>
-     <width>181</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="minimum">
-    <number>-100</number>
-   </property>
-   <property name="maximum">
-    <number>100</number>
-   </property>
-   <property name="displayIntegerBase">
-    <number>10</number>
-   </property>
-  </widget>
-  <widget class="QSlider" name="horizontalSlider">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>290</y>
-     <width>291</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="minimum">
-    <number>-100</number>
-   </property>
-   <property name="maximum">
-    <number>100</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Orientation::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="QLCDNumber" name="lcdNumber">
-   <property name="geometry">
-    <rect>
-     <x>550</x>
-     <y>240</y>
-     <width>241</width>
-     <height>131</height>
-    </rect>
-   </property>
-  </widget>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QSlider" name="horizontalSlider">
+       <property name="minimum">
+        <number>-100</number>
+       </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="spinBox">
+       <property name="minimum">
+        <number>-100</number>
+       </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="displayIntegerBase">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLCDNumber" name="lcdNumber"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections>
