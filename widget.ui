@@ -26,7 +26,7 @@
   <widget class="QSlider" name="horizontalSlider">
    <property name="geometry">
     <rect>
-     <x>440</x>
+     <x>420</x>
      <y>190</y>
      <width>160</width>
      <height>22</height>
@@ -50,8 +50,24 @@
      <y>194</y>
     </hint>
     <hint type="destinationlabel">
-     <x>234</x>
+     <x>494</x>
      <y>193</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>565</x>
+     <y>205</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>96</x>
+     <y>206</y>
     </hint>
    </hints>
   </connection>
